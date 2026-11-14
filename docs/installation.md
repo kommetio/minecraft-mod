@@ -23,6 +23,12 @@ Build the distributable JAR with the Gradle wrapper:
 
 The distributable JAR is written to `build\libs`. Use the built mod JAR, not a development or sources JAR.
 
+### GitHub Actions
+
+Every push triggers the [build workflow](../.github/workflows/build.yml), which uses Java 25 to build the mod. It can also be started manually from the repository's Actions tab.
+
+To download a build, open **Actions > Build mod**, select a successful run, and download the `mod-<commit SHA>` artifact. Extract the ZIP to obtain the distributable JAR. Artifacts are retained for 30 days; this does not publish a GitHub release or upload to CurseForge.
+
 ## Install and deploy
 
 1. Create or select a CurseForge profile using Minecraft 26.3 and NeoForge 26.3. Install the matching Minecraft version and loader on any target server as well.
