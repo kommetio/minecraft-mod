@@ -1,0 +1,49 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "request": "launch",
+      "name": "Client",
+      "presentation": {
+        "group": "Mod Development - minecraft-mod",
+        "order": 0
+      },
+      "projectName": "minecraft-mod",
+      "mainClass": "net.neoforged.devlaunch.Main",
+      "args": [
+        "@C:\\home\\coding\\minecraft-mod\\build\\moddev\\clientRunProgramArgs.txt"
+      ],
+      "vmArgs": [
+        "@C:\\home\\coding\\minecraft-mod\\build\\moddev\\clientRunVmArgs.txt",
+        "-Dfml.modFolders\u003dcat_widmo991%%C:\\home\\coding\\minecraft-mod\\bin\\main"
+      ],
+      "cwd": "${workspaceFolder}\\run",
+      "env": {},
+      "console": "internalConsole",
+      "shortenCommandLine": "none"
+    },
+    {
+      "type": "java",
+      "request": "launch",
+      "name": "Server",
+      "presentation": {
+        "group": "Mod Development - minecraft-mod",
+        "order": 1
+      },
+      "projectName": "minecraft-mod",
+      "mainClass": "net.neoforged.devlaunch.Main",
+      "args": [
+        "@C:\\home\\coding\\minecraft-mod\\build\\moddev\\serverRunProgramArgs.txt"
+      ],
+      "vmArgs": [
+        "@C:\\home\\coding\\minecraft-mod\\build\\moddev\\serverRunVmArgs.txt",
+        "-Dfml.modFolders\u003dcat_widmo991%%C:\\home\\coding\\minecraft-mod\\bin\\main"
+      ],
+      "cwd": "${workspaceFolder}\\run",
+      "env": {},
+      "console": "internalConsole",
+      "shortenCommandLine": "none"
+    }
+  ]
+}
