@@ -5,13 +5,15 @@ This project targets Java 25, Minecraft 26.3, and NeoForge 26.3.0.103. NeoForge'
 ## Create and run
 
 1. Use the NeoForge ModDevGradle template with Minecraft 26.3 and JDK 25. The project keeps its NeoForge and Gradle versions in `gradle.properties`, `build.gradle`, and `gradle/wrapper/gradle-wrapper.properties`.
-2. Put Java code under `src/main/java`. Put the mod metadata template in `src/main/templates/META-INF/neoforge.mods.toml`; Gradle expands its version and mod ID values into the build output.
+2. Put Java code under `src/main/java` and textures, item models, and translations under `src/main/resources/assets/cat_widmo991`. Put the mod metadata template in `src/main/templates/META-INF/neoforge.mods.toml`; Gradle expands its version and mod ID values into the build output.
 3. Implement the mod entry point and features using the NeoForge API. Keep the `mod_id` in `gradle.properties`, the `@Mod` annotation, and the metadata consistent.
 4. From the project root, launch the configured development client:
 
    ```powershell
    .\gradlew.bat runClient
    ```
+
+   In a Creative world, use the **White Silhouette Spawn Egg** from the **Spawn Eggs** tab. The entity wanders peacefully and has only a white square head and torso.
 
 ## Build
 
